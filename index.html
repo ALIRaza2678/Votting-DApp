@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Blockchain Voting</title>
+  <!-- Correct version for browser -->
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section>
+    <h1>Voting DApp</h1>
+
+    <button id="connectButton">Connect Wallet</button>
+    <p id="walletAddress"></p>
+
+    <hr>
+
+    <h3>Register Voter</h3>
+    <input type="text" id="voterAddress" placeholder="Enter voter address">
+    <button id="registerVoter">Register Voter</button>
+
+    <hr>
+
+    <h3>Vote for a Candidate</h3>
+    <select id="candidateSelect"></select>
+    <button id="voteButton">Vote</button>
+
+    <hr>
+
+    <h3>Results</h3>
+  <canvas id="voteChart" width="400" height="300"></canvas>
+
+
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>

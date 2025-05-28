@@ -1,0 +1,114 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #c3e0e5, #a2d4ec);
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  color: #0077cc;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+  opacity: 0.5;
+}
+
+input, select, button {
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 500px;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  border-color: #0077cc;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 119, 204, 0.3);
+}
+
+button {
+  background: linear-gradient(135deg, #0077cc, #005fa3);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s, background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+  transform: scale(1.03);
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#walletAddress {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #2c3e50;
+  animation: fadeIn 1s ease;
+}
+
+#voteResults p {
+  background-color: #e8f4fd;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin: 8px 0;
+  animation: slideIn 0.5s ease forwards;
+}
+
+section {
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+  animation: fadeIn 1s ease-out;
+}
+
+h3 {
+  margin-top: 30px;
+  color: #003366;
+}
+canvas {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin-top: 20px;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-30px); }
+  to { opacity: 1; transform: translateX(0); }
+}
